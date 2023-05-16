@@ -13,6 +13,6 @@
 
 
 
-    <button class='btn btn-success' wire:click=''>Edytuj post</button>
+    <button class='btn btn-success' wire:click="update({{$post['id']}})">Edytuj post</button>
     <button class='btn btn-danger ms-1' wire:click="delete({{$post['id']}})">Usuń post</button>
 </div>

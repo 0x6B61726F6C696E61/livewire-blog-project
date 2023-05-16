@@ -5,7 +5,7 @@ use App\Http\Livewire\MainPage;
 use App\Http\Livewire\CreatePost;
 use App\Http\Livewire\Show;
 use App\Http\Livewire\Destroy;
-
+use App\Http\Livewire\UpdatePost;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +21,5 @@ use App\Http\Livewire\Destroy;
 Route::get('/',MainPage::class);
 Route::get('/dodaj-post',CreatePost::class);
 Route::get('/{id}/usun',Destroy::class);
+Route::get('/{id}/edytuj', UpdatePost::class);
 Route::get('/{id}',Show::class);

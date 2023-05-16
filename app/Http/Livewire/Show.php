@@ -22,4 +22,8 @@ class Show extends Component
     public function delete($id){
         return redirect("/$id/usun");
     }
+
+    public function update($id){
+        return redirect("/$id/edytuj");
+    }
 }
