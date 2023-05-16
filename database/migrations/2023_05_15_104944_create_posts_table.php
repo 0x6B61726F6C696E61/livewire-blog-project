@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title', 70);
-            $table->string('body');
+            $table->string('body', 65535);
         });
     }
 

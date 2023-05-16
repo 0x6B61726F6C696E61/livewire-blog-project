@@ -27,5 +27,8 @@ class MainPage extends Component
         return view('livewire.main-page', ['post_list' => Post::where('title','like', '%'.$this->input_value.'%')->latest()->paginate(10)]);
     }
 
+    public function test(){
+        $this->emit('refreshComponent');
+    }
 
 }

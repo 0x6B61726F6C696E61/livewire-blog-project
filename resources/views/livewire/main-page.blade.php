@@ -2,6 +2,7 @@
     <div class='mt-3'>
         @if (session()->has('message'))
             <div class="alert alert-warning">
+                <button wire:click="test" class='btn btn-sm'>X</button>
                 {{ session('message') }}
             </div>
         @endif

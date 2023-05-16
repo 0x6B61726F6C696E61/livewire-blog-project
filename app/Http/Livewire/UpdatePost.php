@@ -38,4 +38,8 @@ class UpdatePost extends Component
     {
         return view('livewire.update-post');
     }
+
+    public function go_back(){
+        return redirect('/');
+    }
 }

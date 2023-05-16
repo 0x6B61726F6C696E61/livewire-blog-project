@@ -26,4 +26,8 @@ class Show extends Component
     public function update($id){
         return redirect("/$id/edytuj");
     }
+
+    public function go_back(){
+        return redirect('/');
+    }
 }

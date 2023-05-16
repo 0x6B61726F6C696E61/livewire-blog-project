@@ -1,5 +1,5 @@
 <div>
-    <div class='container shadow shadow-lg p-3'>
+    <div class='container shadow shadow-lg p-3 mt-5'>
         <h3>Czy na pewno chcesz usunąć ten post?</h3>
         <br>
 
