@@ -19,6 +19,7 @@ class CreatePost extends Component
             'title' => $this->post_title,
             'body' => $this->post_body]);
 
+    session()->flash('message', 'Dodano post!');
     return redirect()->to('/');
 }
 }

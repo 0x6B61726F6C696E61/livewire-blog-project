@@ -27,6 +27,7 @@ class Destroy extends Component
         $isDeleted = $this->post->delete();
 
         if ($isDeleted) {
+            session()->flash('message', 'Usunięto post');
             return redirect('/');
         } else {
             throw new Exception('Ups. Coś poszło nie tak...');

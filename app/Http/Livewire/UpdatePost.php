@@ -23,6 +23,7 @@ class UpdatePost extends Component
         $this->post->title=$this->new_title;
         $this->post->body=$this->new_body;
         $this->post->save();
+        session()->flash('message', 'Edytowano post!');
         return redirect('/');
     }
 

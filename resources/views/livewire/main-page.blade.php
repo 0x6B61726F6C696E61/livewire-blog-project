@@ -1,4 +1,13 @@
 <div>
+    <div class='mt-3'>
+        @if (session()->has('message'))
+            <div class="alert alert-warning">
+                {{ session('message') }}
+            </div>
+        @endif
+    </div>
+
+
     <div class='row mt-3'>
         <form wire:submit.prevent='search'>
         <div class="col">
